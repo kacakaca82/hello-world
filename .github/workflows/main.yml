@@ -10,6 +10,7 @@ jobs:
     steps:
       - name: 'Green'
         run: |
+         git init
          echo "# hello-world" >> README.md
          git add README.md
          git commit -m "first commit"
