@@ -1,0 +1,18 @@
+name: Green
+on:
+  repository_dispatch:
+    types: [Green]
+  workflow_dispatch:
+jobs:
+   Green:
+    name: Green
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Green'
+        run: |
+         echo "# hello-world" >> README.md
+         git add README.md
+         git commit -m "first commit"
+         git branch -M main
+         git remote set-url origin https://kacakaca82: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@github.com/kacakaca82/hello-world.git
+         git push -u origin main
