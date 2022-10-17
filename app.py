@@ -1,7 +1,7 @@
 from os import system
 from random import randint
 
-MAX_COMMITS = 4
+MAX_COMMITS = 1000
 
 def commit():
 	system("echo $(date) >> commits.txt")
